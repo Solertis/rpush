@@ -8,6 +8,7 @@ module Rpush
         begin
           @thread.join
         rescue StandardError
+        ensure
           @thread = nil
         end
       end
